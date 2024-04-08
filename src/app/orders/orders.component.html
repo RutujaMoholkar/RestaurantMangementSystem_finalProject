@@ -1,0 +1,58 @@
+<div class="img">
+
+  <h2>Orders</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Total Price</th>
+        <th>User Name</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+        <!-- <th>Order Items</th> -->
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{ order.orderId }}</td>
+        <td>{{ order.totalPrice }}</td>
+        <td>{{ order.user.name }}</td>
+        <td>{{ order.user.contactNumber }}</td>
+        <td>{{ order.user.email }}</td>
+
+        <td>
+          <button (click)="viewOrderDetails(order)">View Details</button>
+          <button (click)="deleteOrder(order)">Delete</button>
+          <button (click)="editOrder(order)">Edit</button>
+          <div *ngIf="selectedOrder && selectedOrder.orderId === order.orderId" class="order-details">
+            <h5>Order Details</h5>
+            <ul>
+              <li><strong>Order ID:</strong> {{ selectedOrder.orderId }}</li>
+              <li><strong>Total Price:</strong> {{ selectedOrder.totalPrice }}</li>
+            </ul>
+            <h5>User Details</h5>
+            <ul>
+              <li><strong>User Name:</strong> {{ selectedOrder.user.name }}</li>
+              <li><strong>Contact Number:</strong> {{ selectedOrder.user.contactNumber }}</li>
+              <li><strong>Email:</strong> {{ selectedOrder.user.email }}</li>
+            </ul>
+          </div>
+          <div *ngIf="selectedOrder && selectedOrder.orderId === order.orderId" class="order-details">
+            <h5>Order Details</h5>
+            <form (ngSubmit)="updateOrder(selectedOrder)">
+              <label>Total Price:</label>
+              <input type="number" [(ngModel)]="selectedOrder.totalPrice" name="totalPrice" required>
+              <button type="submit">Update</button>
+            </form>
+          </div>
+        </td>
+      </tr>
+      <tr *ngIf="!orders || orders.length === 0">
+        <td colspan="7">No orders available</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

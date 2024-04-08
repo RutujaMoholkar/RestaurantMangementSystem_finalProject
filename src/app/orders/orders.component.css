@@ -1,0 +1,86 @@
+/* Styling for the orders table */
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: monospace;
+  margin: 26px;
+  color: #f85361;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  /**/
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Styling for the order details section */
+.order-details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  /**/
+}
+
+
+.order-details h5 {
+  margin-top: 0;
+  color: #333;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.order-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-details li {
+  margin-bottom: 5px;
+}
+
+.order-details li strong {
+  font-weight: bold;
+}
+
+
+/* Styling for action buttons*/
+button {
+  /* margin-right: 5px; */
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+button:hover {
+  background-color: #0264ce;
+}

@@ -1,0 +1,51 @@
+<!-- products.component.html -->
+<!-- <h1>Products</h1>
+
+<div *ngFor="let category of categories">
+  <div class="category-container">
+    <h2>{{ category.categoryName }}</h2>
+    <div class="product-list">
+      <div *ngFor="let product of category.products" class="product">
+        <div class="product-info">
+          <p>{{ product.productName }}</p>
+          <p>$ {{ product.price }}</p>
+        </div>
+        <div class="product-actions">
+          <button (click)="editProduct(product)">Edit</button>
+          <button (click)="deleteProduct(product.productId)">Delete</button>
+        </div>
+      </div>
+    </div>
+    <button class="add-product-btn" (click)="addProduct(category.categoryId)">Add Product</button>
+  </div>
+</div> -->
+
+
+<div class="product-container">
+  <h2>Products</h2>
+
+  <!-- Buttons for CRUD operations -->
+  <!-- <div class="button-container">
+    <button class="btn-add" (click)="addProduct()">Add Product</button>
+  </div> -->
+
+  <!-- Display products -->
+  <ul class="category-list">
+    <li *ngFor="let category of categories" class="category-item">
+      <h3>{{ category.categoryName }}</h3>
+      <ul class="product-list">
+        <li *ngFor="let product of category.products" class="product-item">
+          <div class="product-details">
+            <span class="product-name">{{ product.productName }}</span>
+            <span class="product-price">{{ product.price }}</span>
+          </div>
+          <div class="product-actions">
+            <button class="btn-delete" (click)="deleteProduct(product.productId)">Delete</button>
+            <!-- <button class="btn-edit" (click)="updateProduct(product.productId,updatedProduct)">Edit</button> -->
+            <button class="btn-edit" (click)="updateProduct(product.productId)">Edit</button>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

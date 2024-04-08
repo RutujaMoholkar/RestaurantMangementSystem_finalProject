@@ -1,0 +1,126 @@
+/* .login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+     background-color: #f2f2f2;*/
+/*
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid black;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #050303;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+     background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-link {
+    margin-top: 15px;
+    color: #888;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+   */
+
+
+.login-container {
+  max-width: 450px;
+  height: 370px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 35px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  width: 55%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.signup-link {
+  margin-top: 15px;
+  color: #888;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+.required::before {
+  content: "*";
+  color: rgb(255, 3, 3);
+  margin-left: 4px;
+}

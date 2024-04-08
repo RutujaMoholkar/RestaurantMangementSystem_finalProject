@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+   
+
+   .navigation {
+    font-family:monospace;
+    font-size: 1.5em;
+    background-color: #dde4d6;
+    padding: 13px;
+   }
+
+   .navigation div ul li a{
+    color: #0e0d0d;
+    padding: 10px;
+    font-weight: 540;
+  
+   }
+  
+   .navigation div ul li a:hover{
+    color: rgb(197, 49, 49);
+   }
+
+  

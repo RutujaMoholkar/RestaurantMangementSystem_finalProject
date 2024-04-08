@@ -1,0 +1,57 @@
+/* about.component.css */
+
+.about {
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.about-section {
+  flex: 1;
+  max-width: 400px;
+  margin: 30px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(253, 240, 240);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.about-section h3 {
+  font-size: 24px;
+  color: #000000;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    max-width: 100%;
+  }
+}
